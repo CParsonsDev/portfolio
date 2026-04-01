@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+/* Palette inspired by Hurricane Ridge, WA found here: https://wa.gov/sites/default/files/styles/topic_banner/public/2022-05/hurricane-ridge.jpg?itok=6sy6qzel*/
+
+@property --color-evergreen-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #e7f6b4;
+}
+@property --color-evergreen-medium-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #96aa4d;
+}
+@property --color-evergreen-medium-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #34601d;
+}
+@property --color-evergreen-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #0f2802;
+}
+
+@property --color-sky-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #c0e1f4;
+}
+@property --color-sky-medium-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #8db9d6;
+}
+@property --color-sky-medium-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2e5c7d;
+}
+@property --color-sky-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #021d28;
+}
+
+@property --color-wood-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fff0d6;
+}
+@property --color-wood-medium-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #cea962;
+}
+@property --color-wood-medium-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #624119;
+}
+@property --color-wood-dark {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #271602;
+}
+
+header{
+  background-color: var(--color-sky-light);
+  hgroup{
+    h1{
+      color: var(--color-sky-medium-dark);
+    }
+    p{
+      color: var(--color-sky-dark)
+    }
+  }
+}
+
+footer{
+  background-color: var(--color-wood-light);
+  hgroup{
+    h2{
+      color: var(--color-wood-medium-dark);
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
