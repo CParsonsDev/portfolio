@@ -1,85 +1,65 @@
 /* Palette inspired by Hurricane Ridge, WA found here: https://wa.gov/sites/default/files/styles/topic_banner/public/2022-05/hurricane-ridge.jpg?itok=6sy6qzel*/
-
-@property --color-evergreen-light {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #e7f6b4;
-}
-@property --color-evergreen-medium-light {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #96aa4d;
-}
-@property --color-evergreen-medium-dark {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #34601d;
-}
-@property --color-evergreen-dark {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #0f2802;
+:root {
+  --color-cloud-light:#EBEBFF;
+  --color-cloud-medium-light:#9898AD;
+  --color-cloud-medium-dark:#3E3E4F;
+  --color-cloud-dark:#151530;
+  --color-evergreen-light: #e7f6b4;
+  --color-evergreen-medium-light:#96aa4d;
+  --color-evergreen-medium-dark:#34601d;
+  --color-evergreen-dark: #0f2802;
+  --color-sky-light:#c0e1f4;
+  --color-sky-medium-light: #8db9d6;
+  --color-sky-medium-dark: #2e5c7d;
+  --color-sky-dark: #021d28;
+  --color-wood-light: #fff0d6;
+  --color-wood-medium-light: #cea962;
+  --color-wood-medium-dark: #624119;
+  --color-wood-dark: #271602;
 }
 
-@property --color-sky-light {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #c0e1f4;
-}
-@property --color-sky-medium-light {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #8db9d6;
-}
-@property --color-sky-medium-dark {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #2e5c7d;
-}
-@property --color-sky-dark {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #021d28;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-cloud-text: var(--color-cloud-light);
+    --color-cloud-accent: var(--color-cloud-medium-light);
+    --color-cloud-highlight:var(--color-cloud-medium-dark);
+    --color-cloud-background: var(--color-cloud-dark);
+    --color-evergreen-text: var(--color-evergreen-light);
+    --color-evergreen-accent: var(--color-evergreen-medium-light);
+    --color-evergreen-highlight:var(--color-evergreen-medium-dark);
+    --color-evergreen-background: var(--color-evergreen-dark);
+    --color-sky-text: var(--color-sky-light);
+    --color-sky-accent: var(--color-sky-medium-light);
+    --color-sky-highlight:var(--color-sky-medium-dark);
+    --color-sky-background: var(--color-sky-dark);
+    --color-wood-text: var(--color-wood-light);
+    --color-wood-accent: var(--color-wood-medium-light);
+    --color-wood-highlight:var(--color-wood-medium-dark);
+    --color-wood-background: var(--color-wood-dark);
+  }
 }
 
-@property --color-wood-light {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #fff0d6;
-}
-@property --color-wood-medium-light {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #cea962;
-}
-@property --color-wood-medium-dark {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #624119;
-}
-@property --color-wood-dark {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #271602;
+body{
+  background-color: --color-cloud-background;
 }
 
 header{
-  background-color: var(--color-sky-light);
+  background-color: var(--color-sky-background);
   hgroup{
     h1{
-      color: var(--color-sky-medium-dark);
+      color: var(--color-sky-accent);
     }
     p{
-      color: var(--color-sky-dark)
+      color: var(--color-sky-text)
     }
   }
 }
 
 footer{
-  background-color: var(--color-wood-light);
+  background-color: var(--color-wood-background);
   hgroup{
     h2{
-      color: var(--color-wood-medium-dark);
+      color: var(--color-wood-accent);
     }
   }
 }

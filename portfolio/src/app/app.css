@@ -1,8 +1,8 @@
 main{
-  background-color: var(--color-evergreen-light);
+  background-color: var(--color-evergreen-background);
   hgroup{
     h2{
-      color: var(--color-evergreen-medium-dark);
+      color: var(--color-evergreen-accent);
     }
   }
 }
