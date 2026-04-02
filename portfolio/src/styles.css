@@ -1,21 +1,37 @@
 /* Palette inspired by Hurricane Ridge, WA found here: https://wa.gov/sites/default/files/styles/topic_banner/public/2022-05/hurricane-ridge.jpg?itok=6sy6qzel*/
 :root {
-  --color-cloud-light:#EBEBFF;
+  --color-cloud-light:#fafaff;
+  --color-cloud-background:var(--color-cloud-light);
   --color-cloud-medium-light:#9898AD;
+  --color-cloud-highlight:var(--color-cloud-medium-light);
   --color-cloud-medium-dark:#3E3E4F;
-  --color-cloud-dark:#151530;
+  --color-cloud-accent:var(--color-cloud-medium-dark);
+  --color-cloud-dark:#020210;
+  --color-cloud-text:var(--color-cloud-dark);
   --color-evergreen-light: #e7f6b4;
+  --color-evergreen-background:var(--color-evergreen-light);
   --color-evergreen-medium-light:#96aa4d;
+  --color-evergreen-highlight:var(--color-evergreen-medium-light);
   --color-evergreen-medium-dark:#34601d;
+  --color-evergreen-accent:var(--color-evergreen-medium-dark);
   --color-evergreen-dark: #0f2802;
+  --color-evergreen-text:var(--color-evergreen-dark);
   --color-sky-light:#c0e1f4;
+  --color-sky-background:var(--color-sky-light);
   --color-sky-medium-light: #8db9d6;
+  --color-sky-highlight:var(--color-sky-medium-light);
   --color-sky-medium-dark: #2e5c7d;
+  --color-sky-accent:var(--color-sky-medium-dark);
   --color-sky-dark: #021d28;
+  --color-sky-text:var(--color-sky-dark);
   --color-wood-light: #fff0d6;
+  --color-wood-background:var(--color-wood-light);
   --color-wood-medium-light: #cea962;
+  --color-wood-highlight:var(--color-wood-medium-light);
   --color-wood-medium-dark: #624119;
+  --color-wood-accent:var(--color-wood-medium-dark);
   --color-wood-dark: #271602;
+  --color-wood-text:var(--color-wood-dark);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,24 +56,41 @@
 }
 
 body{
-  background-color: --color-cloud-background;
+  background-color: var(--color-cloud-background);
+  margin: 0;
 }
 
 header{
   background-color: var(--color-sky-background);
   hgroup{
+    > *{
+    margin: 0;
+    }
     h1{
       color: var(--color-sky-accent);
     }
     p{
-      color: var(--color-sky-text)
+      color: var(--color-sky-text);
     }
+  }
+}
+
+nav{
+  background-color: var(--color-cloud-background);
+  > *{
+    margin: 0;
+  }
+  p{
+    color: var(--color-cloud-text);
   }
 }
 
 footer{
   background-color: var(--color-wood-background);
   hgroup{
+    > *{
+    margin: 0;
+    }
     h2{
       color: var(--color-wood-accent);
     }
