@@ -60,6 +60,10 @@ body{
   margin: 0;
 }
 
+p{
+  color: var(--color-cloud-text);
+}
+
 header{
   background-color: var(--color-sky-background);
   hgroup{
@@ -79,9 +83,6 @@ nav{
   background-color: var(--color-cloud-background);
   > *{
     margin: 0;
-  }
-  p{
-    color: var(--color-cloud-text);
   }
 }
 
