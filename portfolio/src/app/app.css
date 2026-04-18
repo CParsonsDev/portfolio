@@ -1,11 +1,11 @@
-main{
+hgroup{
   background-color: var(--color-evergreen-background);
-  hgroup{
-    > *{
-    margin: 0;
-    }
-    h2{
-      color: var(--color-evergreen-accent);
-    }
+
+  > *{
+  margin: 0;
   }
+  h2{
+    color: var(--color-evergreen-accent);
+  }
+
 }
