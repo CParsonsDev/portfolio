@@ -1,0 +1,22 @@
+<p>portfolio works!</p>
+
+<div class="portfolio-layout">
+  <aside class="sidebar">
+    @for (project of projects; track project.id) {
+      <div class="card"
+        [class.active]="selectedSlug() === project.folder"
+        (click)="select(project.folder)">
+        <h3>{{ project.title }}</h3>
+        <img [src]="project.previewImage" alt="{{ project.title }} preview image" class="preview-image">
+        <p>{{ project.description }}</p>
+        <div class="tags">
+          @for (tag of project.tags; track tag) {
+            <span class="tag">{{ tag }}</span>
+          }
+        </div>
+      </div>
+    }
+  </aside>
+
+</div>
+

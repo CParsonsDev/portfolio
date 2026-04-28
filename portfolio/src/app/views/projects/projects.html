@@ -1,1 +1,14 @@
 <p>projects works!</p>
+
+<div class="portfolio-grid">
+  <div class="display-wrapper">
+    @if (safeUrl()) {
+      <iframe [src]="safeUrl()" class="project-frame"></iframe>
+    } @else {
+      <div class="placeholder">Select a project to view the demo.</div>
+      <section class="preview-area">
+        <app-portfolio [selectedSlug]="selectedSlug()" (selectedChange)="selectedSlug.set($event)" />
+      </section>
+    }
+  </div>
+</div>
