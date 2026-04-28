@@ -1,13 +1,3 @@
-/* Key | Requirements met on page: D.     line 10
-   ____|                           D.1.   line 45
-                                   D.2.   line 268
-                                   D.3.   line 87
-                                   D.4.   line 99
-                                   D.5.   line 208
-                                   D.6.1. line 27
-                                   D.6.2. line 34
-                                   D.6.3. line 199 */
-/* D. Create 1 external CSS stylesheet */
 /* Color palette */
 
 :root {
@@ -24,31 +14,22 @@
     --a3: #600060;
 }
 
-/* D.6.1 a functioning element selector that is used at least once on the website */
 credit {
     color: var(--txt4);
 }
 
-/* Class regularly used throughout website to remove unwanted spacing */
-
-/* D.6.2 a functioning class selector that is used twice on the same HTML page */
 .no-space {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
-/* Applies "default" font and background styling to webpages */
-
 body {
     font-size: 16px;
-/* D.1. Font Family declaration */
     font-family: Arial, Helvetica, sans-serif;
     color: var(--txt1);
     background-color: var(--bg4);
 }
-
-/* Applies standard layout and styling to aside of all pages */
 
 header {
     z-index: 3;
@@ -68,9 +49,6 @@ header {
         background-color: var(--bg2);
     }
 
-/* Applies standard layout and styling to navigation of all pages. */
-/* Later content styles links and dropdown, as well as changes for smaller screens */
-
     & nav {
         min-width: 37.5%;
         font-size: 1.5rem;
@@ -84,7 +62,6 @@ header {
                 font-weight: 600;
             }
             & .down-arrow {
-/* D.3. a float property to position one HTML element within the website to the side of another element */
                 float: inline-end;
                 background-color: var(--bg2);
             }
@@ -92,11 +69,8 @@ header {
     }
 }
 
-/* Applies standard layout and styling to aside of all pages */
-
 aside {
     z-index: 1;
-/* D.4. absolute positioning that changes the position of an element */
     position: absolute;
     top: 10%;
     display: flex;
@@ -127,8 +101,6 @@ aside {
         }
     }
 }
-
-/* Applies majority of style & layout to main content area of webpages */
 
 main {
     z-index: 2;
@@ -194,9 +166,6 @@ main {
     }
 }
 
-/* Applies style & layout changes to homepage from interior pages */
-
-/* D.6.3 a functioning id selector used at least once on the website */
 #state {
     & main {
         section {
@@ -205,7 +174,6 @@ main {
             padding-bottom: 0%;
             & hgroup {
                 & h2 {
-/* D.5. relative positioning on one page that changes the position of an element */
                     position: relative;
                     right: 5%;
                 }
@@ -235,8 +203,6 @@ main {
     }
 }
 
-/* Stylizes and enables navigation dropdown feature */
-
 .dropdown-button {
     display: block;
     border: none;
@@ -265,7 +231,6 @@ main {
         border-bottom: var(--txt2) 0.1rem solid;
         padding-bottom: 0%;
     }
-/* D.2. :hover pseudo-class to create a rollover effect for the navigation links */
     & a:hover {
         border: var(--bg4) 0.1rem solid;
         padding: 0;
@@ -278,8 +243,6 @@ main {
         display: block;
     }
 }
-
-/* Stylizes responsive links */
 
 a {
     display: block;
@@ -300,8 +263,6 @@ a:active {
     border-color: var(--a3);
     background-color: var(--bg2);
 }
-
-/* Maintains accessibility on smaller screens with minor layout modifications */
 
 @media screen and (max-width: 600px) {
     header, aside, main {
