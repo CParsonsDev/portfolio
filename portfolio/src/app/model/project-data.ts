@@ -22,9 +22,9 @@ export const PROJECT_DATA: ProjectData[] = [
   },
   {
     id: 2,
-    title: 'Portfolio',
-    description: "This portfolio that is currently open.",
-    folder:'portfolio',
+    title: 'World Map',
+    description: "An interactive world map showing country data.",
+    folder:'world-map',
     previewImage:'assets/rasters/placeholder.png',
     tags:['TypeScript','Angular','CSS3','HTML'],
     artifacts:[],
