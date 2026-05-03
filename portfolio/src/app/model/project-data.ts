@@ -22,11 +22,11 @@ export const PROJECT_DATA: ProjectData[] = [
   },
   {
     id: 2,
-    title: 'World Map',
-    description: "An interactive world map showing country data.",
-    folder:'world-map',
+    title: 'Graphics Processing',
+    description: "A parametric graphics processing tool.",
+    folder:'graphics-processing',
     previewImage:'assets/rasters/placeholder.png',
-    tags:['TypeScript','Angular','CSS3','HTML'],
+    tags:['JavaScript','CSS3','HTML5'],
     artifacts:[],
     githubLink:''
   }
