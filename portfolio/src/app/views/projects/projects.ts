@@ -17,9 +17,13 @@ export class Projects {
 
   safeUrl = computed(() => {
     const slug = this.selectedSlug();
-    if (!slug) return null;
+    if (!slug) {
+      console.log('No project selected. Providing default content.');
+      return null
+    };
 
     const path = `/assets/projects/${slug}/index.html`;
+    console.log('Selected project slug: ', slug, '\nConstructed path: ', path);
     return this.sanitizer.bypassSecurityTrustResourceUrl(path);
   });
 }

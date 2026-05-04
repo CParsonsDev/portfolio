@@ -74,7 +74,7 @@ p{
 
 header{
   display: inline-flex;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
 
   background-color: var(--color-sky-background);
@@ -121,7 +121,7 @@ header{
 
 
 app-root {
-  height: 80vh;
+  height: 92vh;
   position: sticky;
   top: 20px;
 

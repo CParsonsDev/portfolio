@@ -1,7 +1,7 @@
 <p>portfolio works!</p>
 
 <div class="portfolio-layout">
-  <aside class="sidebar">
+  <content>
     @for (project of projects; track project.id) {
       <div class="card"
         [class.active]="selectedSlug() === project.folder"
@@ -16,7 +16,7 @@
         </div>
       </div>
     }
-  </aside>
+  </content>
 
 </div>
 

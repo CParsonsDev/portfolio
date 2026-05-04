@@ -1,0 +1,12 @@
+.card{
+  background-color: var(--color-evergreen-background);
+  border: 1px solid var(--color-evergreen-accent);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  width: calc(content + 2vw);
+}
+.card:hover{
+  background-color: var(--color-evergreen-highlight);
+}
