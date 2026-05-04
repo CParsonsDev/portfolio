@@ -65,6 +65,8 @@ html{
 
 body{
   width: inherit;
+  display: flex;
+  flex-direction: row;
   background-color: var(--color-cloud-background);
 }
 
@@ -72,20 +74,20 @@ p{
   color: var(--color-cloud-text);
 }
 
-header{
+aside{
   display: inline-flex;
-  height: 8vh;
-  width: 100vw;
+  flex-direction: column;
+  position:sticky;
+  top: 0;
 
-  background-color: var(--color-sky-background);
+  height: 100vh;
+  width: 8vw;
 
   > *{
     justify-items: center;
   }
 
   nav{
-    display: inline-block;
-    width: 10%;
 
     color: var(--color-evergreen-highlight);
     background-color: var(--color-evergreen-background);
@@ -100,96 +102,31 @@ header{
       margin: 0;
     }
   }
-
-  hgroup{
-    display: inline;
-    width: 90vw;
-    
-    > *{
-      position: relative;
-      left: -5vw;
-    }
-    h1{
-      color: var(--color-sky-accent);
-    }
-    p{
-      color: var(--color-sky-text);
-    }
-  }
 }
 
 
 
 app-root {
-  height: 92vh;
-  position: sticky;
-  top: 20px;
+  height: 100vh;
+  width: 92vw;
 
   background-color: var(--color-cloud-background);
 }
 
-footer{
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-  height: 10vh;
-  width: 90vw;
-
-  background-color: var(--color-wood-background);
-
-  hgroup{
-    > *{
-    margin: 0;
-    }
-    h2{
-      color: var(--color-wood-accent);
-    }
-  }
-}
-
-.dropdown-button {
-  display: block;
-  border: none;
-  outline: none;
-  text-align: center;
-  color:var(--color-evergreen-text);
-  font-family: inherit;
-  font-size: inherit;
-  background-color: inherit;
-  & .down-arrow {
-    color: var(--color-evergreen-accent)
-  }
-}
-.dropdown-content {
-  display: none;
-  z-index: 4;
-  position: absolute;
-  background-color: var(--color-evergreen-background);
-  & a, p {
-    display: block;
-    background-color: var(--color-evergreen-highlight);
-    margin: 0;
-    padding: 0.1rem;
-  }
-  & p {
-    border-bottom: var(--color-evergreen-accent) 0.1rem solid;
-    padding-bottom: 0%;
-  }
-  & a:hover {
-    border: var(--color-evergreen-text) 0.1rem solid;
-    padding: 0;
-  }
-}
-
-.dropdown-container:hover {
-  background-color: var(--color-evergreen-highlight);
-  & .dropdown-content {
-    display: block;
-  }
+button {
+  background-color: transparent;
+  border: var(--color-evergreen-accent) 0.1rem solid;
+  padding: 0;
+  margin: 0.3rem;
+  cursor: pointer;
 }
 
 a {
+  width: 7vw;
   display: block;
   text-decoration: none;
+
+  background-color: var(--color-evergreen-background);
 }
 a:link {
   color: var(--color-evergreen-text);

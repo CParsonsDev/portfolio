@@ -33,9 +33,12 @@ main {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsl(0 0 80);
-  /*background: url(../../../../public/assets/rasters/worldmap-background.png) no-repeat center fixed;*/
+  background: url(../../../../public/assets/rasters/worldmap-background.png) no-repeat center fixed;
   background-color: hsl(0 0 15);
   background-size: cover;
+
+  height: 100vh;
+  width: 92vw;
 }
 
 header {

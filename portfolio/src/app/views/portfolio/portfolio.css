@@ -1,12 +1,42 @@
+content{
+  max-height: (fit-content, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3, .tag {
+  display: inline-block;
+  color: var(--color-evergreen-text); 
+}
+
 .card{
+  width: 90%;
+
+  display: flex;
+  gap: 2vw;
+
   background-color: var(--color-evergreen-background);
   border: 1px solid var(--color-evergreen-accent);
   border-radius: 8px;
+
   padding: 1rem;
   margin: 0.5rem;
+
   cursor: pointer;
-  width: calc(content + 2vw);
+
+  & img {
+    float: left;
+
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+  }
 }
 .card:hover{
   background-color: var(--color-evergreen-highlight);
+
+  & h3 , & .tag{
+    color: var(--color-cloud-text);
+  }
 }
