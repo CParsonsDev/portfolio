@@ -1,42 +1,84 @@
 content{
-  max-height: (fit-content, 95%);
+  width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
 h3, .tag {
+  color: var(--color-evergreen-text);
+}
+
+.tag {
   display: inline-block;
-  color: var(--color-evergreen-text); 
 }
 
 .card{
   width: 90%;
 
   display: flex;
-  gap: 2vw;
+  gap: 2rem;
 
   background-color: var(--color-evergreen-background);
-  border: 1px solid var(--color-evergreen-accent);
-  border-radius: 8px;
+  border: 0.1rem solid var(--color-evergreen-accent);
+  border-radius: 1.5rem;
 
   padding: 1rem;
-  margin: 0.5rem;
 
   cursor: pointer;
-
-  & img {
-    float: left;
-
-    height: 100%;
-    width: auto;
-    border-radius: 8px;
-  }
 }
+
 .card:hover{
   background-color: var(--color-evergreen-highlight);
+  border: 0.3rem solid var(--color-evergreen-accent);
+
+  padding: 0.8rem;
 
   & h3 , & .tag{
     color: var(--color-cloud-text);
   }
+}
+
+& .preview-image {
+  float: left;
+
+  max-width: 60%;
+  height: auto;
+  
+  border-radius: 1rem;
+}
+
+.artifacts {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
+
+.artifact-image {
+  position: relative;
+  
+  max-width: 45%;
+  height: auto;
+
+  border: 0.1rem solid var(--color-evergreen-highlight);
+  border-radius: 1rem;
+}
+
+.artifact-image:hover {
+  transform: scale(1.5);
+  border-color: var(--color-evergreen-accent);
+  box-shadow: 0.3rem 0.3rem 0.3rem var(--color-cloud-dark);
+  z-index: 1;
+}
+
+p{
+  text-indent: 1rem;
 }

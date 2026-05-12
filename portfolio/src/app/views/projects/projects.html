@@ -1,5 +1,5 @@
 <div class="portfolio-grid">
-  <div class="display-wrapper">
+  <div class="display-wrapper" [style.overflow]="safeUrl() ? 'hidden' : 'auto'">
     @if (safeUrl()) {
       <iframe [src]="safeUrl()" class="project-frame"></iframe>
     } @else {
