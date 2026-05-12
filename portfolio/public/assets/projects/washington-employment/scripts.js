@@ -11,7 +11,7 @@ function emailmatch(){
         alert("The two emails do not match.")
     }
     else {
-        alert("Submission approved.")
+        alert("Simulated submission approved.")
     };
 }
 
