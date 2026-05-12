@@ -1,57 +1,105 @@
 /* Palette inspired by Hurricane Ridge, WA found here: https://wa.gov/sites/default/files/styles/topic_banner/public/2022-05/hurricane-ridge.jpg?itok=6sy6qzel*/
 :root {
-  --color-cloud-light:#fafaff;
+  /* Core Color Palette */
+  --color-cloud-light:#fafaffff;
+  --color-cloud-medium-light:#9898ADff;
+  --color-cloud-medium-dark:#3E3E4Fff;
+  --color-cloud-dark:#020210ff;
+  --color-evergreen-light: #e7f6b4ff;
+  --color-evergreen-medium-light:#96aa4dff;
+  --color-evergreen-medium-dark:#34601dff;
+  --color-evergreen-dark: #0f2802ff;
+  --color-sky-light:#c0e1f4ff;
+  --color-sky-medium-light: #8db9d6ff;
+  --color-sky-dark: #021d28ff;
+  --color-wood-light: #fff0d6ff;
+  --color-wood-medium-light: #cea962ff;
+  --color-wood-medium-dark: #624119ff;
+  --color-wood-dark: #271602ff;
+
+  /* Transparent Variants */
+
+  --color-cloud-light-transparent:#fafaff00;
+  --color-cloud-medium-light-transparent:#9898AD00;
+  --color-cloud-medium-dark-transparent:#3E3E4F00;
+  --color-cloud-dark-transparent:#02021000;
+  --color-evergreen-light-transparent: #e7f6b400;
+  --color-evergreen-medium-light-transparent:#96aa4d00;
+  --color-evergreen-medium-dark-transparent:#34601d00;
+  --color-evergreen-dark-transparent: #0f280200;
+  --color-sky-light-transparent:#c0e1f400;
+  --color-sky-medium-light-transparent: #8db9d600;
+  --color-sky-dark-transparent: #021d2800;
+  --color-wood-light-transparent: #fff0d600;
+  --color-wood-medium-light-transparent: #cea96200;
+  --color-wood-medium-dark-transparent: #62411900;
+  --color-wood-dark-transparent: #27160200;
+
+  /* Light Color Scheme */
   --color-cloud-background:var(--color-cloud-light);
-  --color-cloud-medium-light:#9898AD;
   --color-cloud-highlight:var(--color-cloud-medium-light);
-  --color-cloud-medium-dark:#3E3E4F;
   --color-cloud-accent:var(--color-cloud-medium-dark);
-  --color-cloud-dark:#020210;
   --color-cloud-text:var(--color-cloud-dark);
-  --color-evergreen-light: #e7f6b4;
+
   --color-evergreen-background:var(--color-evergreen-light);
-  --color-evergreen-medium-light:#96aa4d;
   --color-evergreen-highlight:var(--color-evergreen-medium-light);
-  --color-evergreen-medium-dark:#34601d;
   --color-evergreen-accent:var(--color-evergreen-medium-dark);
-  --color-evergreen-dark: #0f2802;
   --color-evergreen-text:var(--color-evergreen-dark);
-  --color-sky-light:#c0e1f4;
+
   --color-sky-background:var(--color-sky-light);
-  --color-sky-medium-light: #8db9d6;
   --color-sky-highlight:var(--color-sky-medium-light);
-  --color-sky-medium-dark: #2e5c7d;
   --color-sky-accent:var(--color-sky-medium-dark);
-  --color-sky-dark: #021d28;
   --color-sky-text:var(--color-sky-dark);
-  --color-wood-light: #fff0d6;
+
   --color-wood-background:var(--color-wood-light);
-  --color-wood-medium-light: #cea962;
   --color-wood-highlight:var(--color-wood-medium-light);
-  --color-wood-medium-dark: #624119;
   --color-wood-accent:var(--color-wood-medium-dark);
-  --color-wood-dark: #271602;
   --color-wood-text:var(--color-wood-dark);
+
+  /* Light Background Gradients */
+  --gradient-cloud-background: linear-gradient(to bottom, var(--color-cloud-light), var(--color-cloud-medium-light));
+  --gradient-evergreen-background: linear-gradient(to bottom, var(--color-evergreen-light), var(--color-evergreen-medium-light));
+  --gradient-sky-background: linear-gradient(to bottom, var(--color-sky-light), var(--color-sky-medium-light));
+  --gradient-wood-background: linear-gradient(to bottom, var(--color-wood-light), var(--color-wood-medium-light));
+
+  /* Light Button */
+    --color-evergreen-button-pressed: var(--color-evergreen-medium-light);
+    --gradient-evergreen-button-pressed: radial-gradient(var(--color-evergreen-light) 50%, var(--color-evergreen-medium-light));
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Dark Color Scheme */
     --color-cloud-text: var(--color-cloud-light);
     --color-cloud-accent: var(--color-cloud-medium-light);
     --color-cloud-highlight:var(--color-cloud-medium-dark);
     --color-cloud-background: var(--color-cloud-dark);
+
     --color-evergreen-text: var(--color-evergreen-light);
     --color-evergreen-accent: var(--color-evergreen-medium-light);
     --color-evergreen-highlight:var(--color-evergreen-medium-dark);
     --color-evergreen-background: var(--color-evergreen-dark);
+
     --color-sky-text: var(--color-sky-light);
     --color-sky-accent: var(--color-sky-medium-light);
     --color-sky-highlight:var(--color-sky-medium-dark);
     --color-sky-background: var(--color-sky-dark);
+
     --color-wood-text: var(--color-wood-light);
     --color-wood-accent: var(--color-wood-medium-light);
     --color-wood-highlight:var(--color-wood-medium-dark);
     --color-wood-background: var(--color-wood-dark);
+
+    /* Dark Background Gradients */
+
+    --gradient-cloud-background: linear-gradient(to bottom, var(--color-cloud-medium-light), var(--color-cloud-dark));
+    --gradient-evergreen-background: linear-gradient(to bottom, var(--color-evergreen-medium-light), var(--color-evergreen-dark));
+    --gradient-sky-background: linear-gradient(to bottom, var(--color-sky-medium-light), var(--color-sky-dark));
+    --gradient-wood-background: linear-gradient(to bottom, var(--color-wood-medium-light), var(--color-wood-dark));
+
+    /* Dark Button */
+    --color-evergreen-button-pressed: var(--color-evergreen-medium-dark);
+    --gradient-evergreen-button-pressed: radial-gradient(var(--color-evergreen-medium-light) 50%, var(--color-evergreen-medium-dark));
   }
 }
 
@@ -78,22 +126,19 @@ aside{
   display: inline-flex;
   flex-direction: column;
   position:sticky;
-  top: 0;
 
   height: 100vh;
   width: 8vw;
 
-  > *{
-    justify-items: center;
-  }
-
   nav{
+    height: 100vh;
+    width: 8vw;
+    position: fixed;
 
     color: var(--color-evergreen-highlight);
     background-color: var(--color-evergreen-background);
 
     li{
-      
       list-style-type: none;
     }
 
@@ -101,47 +146,65 @@ aside{
       padding: 0;
       margin: 0;
     }
+    a, button{
+      height: 2.5rem;
+      width: 7vw;
+
+      background-color: var(--color-evergreen-background);
+      color: var(--color-evergreen-text);
+    }
+    button {
+      border: var(--color-evergreen-background) 0.1rem solid;
+      border-radius: 1rem;
+      margin: 0.3rem;
+      cursor: pointer;
+    }
+    a {
+      position: relative;
+      right: 0.1rem;
+      bottom: 0.1rem;
+
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      border-radius: 0.5rem;
+      text-decoration: none;
+    }
+    a:link {
+      color: var(--color-cloud-text);
+    }
+    a:visited {
+      color: var(--color-evergreen-text);
+    }
+    a:hover, button:hover {
+      font-weight: 600;
+      background-color: var(--color-evergreen-highlight);
+    }
+    a:active, button:active {
+      font-weight: 900;
+      border: var(--color-evergreen-button-pressed) 0.1rem solid;
+      background-image: var(--gradient-evergreen-button-pressed);
+    }
   }
 }
-
-
 
 app-root {
   height: 100vh;
   width: 92vw;
+  overflow: auto;
 
-  background-color: var(--color-cloud-background);
-}
-
-button {
-  background-color: transparent;
-  border: var(--color-evergreen-accent) 0.1rem solid;
-  padding: 0;
-  margin: 0.3rem;
-  cursor: pointer;
+  background-image: var(--gradient-cloud);
 }
 
-a {
-  width: 7vw;
-  display: block;
-  text-decoration: none;
-
-  background-color: var(--color-evergreen-background);
-}
-a:link {
-  color: var(--color-evergreen-text);
-}
-a:visited {
-  color: var(--color-evergreen-accent);
-}
-a:hover {
-  font-weight: 600;
-  background-color: var(--color-evergreen-highlight);
-}
-a:active {
-  color: var(--color-evergreen-accent);
-  border-color: var(--color-evergreen-accent);
-  background-color: var(--color-evergreen-highlight);
+@media (prefers-color-scheme: dark) {
+  nav{
+    a:hover, button:hover {
+      text-shadow: var(--color-sky-dark) 0.1rem 0.1rem 0.1rem;
+    }
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
