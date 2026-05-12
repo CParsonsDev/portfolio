@@ -516,22 +516,22 @@
       name="Zimbabwe" id="zw" />
     </svg>
   </div>
-<div class="key">
-  <div class="left-side">
-    <ul>
-      <li class="blue"><span class="key-item">Europe and Central Asia</span></li>
-      <li class="green"><span class="key-item">Latin America & the Caribbean</span></li>
-      <li class="orange"><span class="key-item">Middle East and North Africa</span></li>
-      <li class="pink"><span class="key-item">South Asia</span></li>
-    </ul>
-  </div>
-  <div class="right-side">
-    <ul>
-      <li class="purple"><span class="key-item">East Asia and Pacific</span></li>
-      <li class="red"><span class="key-item">North America</span></li>
-      <li class="yellow"><span class="key-item">Sub-Saharan Africa</span></li>
-    </ul>
-  </div>
+  <div class="key">
+    <div class="left-side">
+      <ul>
+        <li class="blue"><span class="key-item">Europe and Central Asia</span></li>
+        <li class="green"><span class="key-item">Latin America & the Caribbean</span></li>
+        <li class="orange"><span class="key-item">Middle East and North Africa</span></li>
+        <li class="pink"><span class="key-item">South Asia</span></li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <ul>
+        <li class="purple"><span class="key-item">East Asia and Pacific</span></li>
+        <li class="red"><span class="key-item">North America</span></li>
+        <li class="yellow"><span class="key-item">Sub-Saharan Africa</span></li>
+      </ul>
+    </div>
   </div>
   </section>
   <!-- Controls column spacing -->
@@ -555,6 +555,6 @@
       <li>Region: {{ countryData[0].region.value }}</li>
       <li>Income Level: {{ countryData[0].incomeLevel.value }}</li>
     </ul>
-    <p *ngIf="!countryData || countryData.length === 0">Loading country data...</p>
+    <p *ngIf="!countryData || countryData.length === 0" class="failed-report">Country data not available.</p>
   </section>
 </main>
