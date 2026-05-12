@@ -25,6 +25,8 @@ h3, .tag {
   width: 90%;
 
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 
   background-color: var(--color-evergreen-background);
@@ -37,6 +39,7 @@ h3, .tag {
 }
 
 .card:hover{
+  transition: ease-in-out 0.2s;
   background-color: var(--color-evergreen-highlight);
   border: 0.3rem solid var(--color-evergreen-accent);
 
@@ -45,15 +48,6 @@ h3, .tag {
   & h3 , & .tag{
     color: var(--color-cloud-text);
   }
-}
-
-& .preview-image {
-  float: left;
-
-  max-width: 60%;
-  height: auto;
-  
-  border-radius: 1rem;
 }
 
 .artifacts {
@@ -73,9 +67,10 @@ h3, .tag {
 }
 
 .artifact-image:hover {
+  transition:ease-in 0.5s;
   transform: scale(1.5);
   border-color: var(--color-evergreen-accent);
-  box-shadow: 0.3rem 0.3rem 0.3rem var(--color-cloud-dark);
+  box-shadow: 0 0.3rem 0.5rem var(--color-cloud-dark);
   z-index: 1;
 }
 

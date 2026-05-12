@@ -65,6 +65,7 @@
   /* Light Button */
     --color-evergreen-button-pressed: var(--color-evergreen-medium-light);
     --gradient-evergreen-button-pressed: radial-gradient(var(--color-evergreen-light) 50%, var(--color-evergreen-medium-light));
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -180,11 +181,12 @@ aside{
       color: var(--color-evergreen-text);
     }
     a:hover, button:hover {
-      font-weight: 600;
+      transition: ease-in-out 0.2s;
+      font-size: 1.1rem;
       background-color: var(--color-evergreen-highlight);
     }
     a:active, button:active {
-      font-weight: 900;
+      text-shadow: var(--color-sky-accent) 0.1rem 0.1rem 0.1rem;
       border: var(--color-evergreen-button-pressed) 0.1rem solid;
       background-image: var(--gradient-evergreen-button-pressed);
     }
