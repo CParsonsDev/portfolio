@@ -64,7 +64,7 @@
 
   /* Light Button */
     --color-evergreen-button-pressed: var(--color-evergreen-medium-light);
-    --gradient-evergreen-button-pressed: radial-gradient(var(--color-evergreen-light) 50%, var(--color-evergreen-medium-light));
+    --gradient-evergreen-button-pressed: linear-gradient(var(--color-evergreen-medium-light), var(--color-evergreen-light), var(--color-evergreen-medium-light));
 
 }
 
@@ -100,11 +100,12 @@
 
     /* Dark Button */
     --color-evergreen-button-pressed: var(--color-evergreen-medium-dark);
-    --gradient-evergreen-button-pressed: radial-gradient(var(--color-evergreen-medium-light) 50%, var(--color-evergreen-medium-dark));
+    --gradient-evergreen-button-pressed: linear-gradient(var(--color-evergreen-medium-dark), var(--color-evergreen-medium-light), var(--color-evergreen-medium-dark));
   }
 }
 
 html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100vw;
   * {
     padding: 0;
@@ -166,7 +167,7 @@ aside{
       bottom: 0.1rem;
 
       display: inline-flex;
-      flex-direction: column;
+      flex-wrap: nowrap;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -182,7 +183,7 @@ aside{
     }
     a:hover, button:hover {
       transition: ease-in-out 0.2s;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       background-color: var(--color-evergreen-highlight);
     }
     a:active, button:active {
