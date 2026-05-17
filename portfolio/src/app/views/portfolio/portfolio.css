@@ -13,30 +13,60 @@ hgroup {
   gap: 0.5rem;
 }
 
+h3{
+  display: block;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+}
+
 h3, .tag {
   color: var(--color-evergreen-text);
+  border: 0 solid none;
+  border-radius: .75rem;
 }
 
 .tag {
   display: inline-block;
 }
 
-.card{
+.go-to-project{
+  /* Hides link indication text when inactive */
+  display: none;
+}
+
+/* To deactivate card hover effects when artifact hover
+.card:hover:has(.artifact-image:hover), */
+.card {
   width: 90%;
 
   display: flex;
-  align-items: center;
+  align-items: space-between;
   justify-content: space-between;
   gap: 2rem;
 
   background-color: var(--color-evergreen-background);
   border: 0.1rem solid var(--color-evergreen-accent);
   border-radius: 1.5rem;
-
   padding: 1rem;
 
   cursor: pointer;
 }
+
+/* To deactivate card hover effects when artifact hover
+.card:hover:has(.artifact-image:hover){
+  transition: ease-in-out 0.2s;
+
+  /* Hides link indicator as other links become active
+  h3{
+    color: var(--color-evergreen-text);
+    background-image: none;
+    box-shadow: none;
+  }
+  .go-to-project{
+    display: none;
+  }
+}
+*/
 
 .card:hover{
   transition: ease-in-out 0.2s;
@@ -45,8 +75,24 @@ h3, .tag {
 
   padding: 0.8rem;
 
-  & h3 , & .tag{
+  /* Displays hidden text indicating active link */
+  .go-to-project{
+    display: unset;
+  }
+
+  h3, .tag{
     color: var(--color-cloud-text);
+  }
+  h3 {
+    background-image: var(--gradient-cloud-background);
+    box-shadow: inset 0 0 0.3rem var(--color-evergreen-text);
+  }
+}
+
+.card:active{
+  h3{
+    background-color: var(--color-evergreen-highlight);
+    box-shadow: inset 0 0.1rem 0.2rem var(--color-cloud-dark);
   }
 }
 
@@ -57,23 +103,50 @@ h3, .tag {
 }
 
 .artifact-image {
+  /* Necessary for grow-over effect on hover */
   position: relative;
   
+  object-fit: cover;
   max-width: 45%;
-  height: auto;
+  height: 12rem;
 
-  border: 0.1rem solid var(--color-evergreen-highlight);
   border-radius: 1rem;
+  /* Conditional styling to mute inactive artifacts */
+  filter:contrast(0.8) brightness(1.2);
+  border: 0.1rem solid var(--color-evergreen-highlight);
+
 }
 
 .artifact-image:hover {
-  transition:ease-in 0.5s;
-  transform: scale(1.5);
+  object-fit: contain;
+  width: fit-content;
+  height:fit-content;
+  transition: ease-in-out 200ms;
+  /* Resets image to original hue */
+  filter: contrast(1) brightness(1);
+  transform: scale(1.5) translateY(1.5rem);
   border-color: var(--color-evergreen-accent);
   box-shadow: 0 0.3rem 0.5rem var(--color-cloud-dark);
   z-index: 1;
 }
 
+/* Styles artifacts when active
+.artifact-image:active {
+  transition-duration: 100ms;
+  left: 0.1rem;
+  top: 0.1rem;
+
+  border-color: var(--color-evergreen-highlight);
+  box-shadow: inset 0 0.1rem 0.2rem var(--color-cloud-dark);
+}
+*/
+
 p{
   text-indent: 1rem;
+}
+
+@media (prefers-color-scheme: dark){
+  .artifact-image{
+    filter: contrast(0.8) brightness(0.8);
+  }
 }

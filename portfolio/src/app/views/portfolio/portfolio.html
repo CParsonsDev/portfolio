@@ -6,15 +6,16 @@
         [class.active]="selectedSlug() === project.folder"
         (click)="select(project.folder)">
         <img [src]="project.previewImage" alt="{{ project.title }} preview image"
-          style="
-            position: relative;
-            width: 25vw;
-            height: 25vw;
-            object-fit: cover;
-            border: 0.1rem solid var(--color-evergreen-highlight);
-            border-radius: 1rem;">
+        style="
+          position: relative;
+          width: 25vw;
+          height: 25vw;
+          object-fit: cover;
+          border: 0.1rem solid var(--color-evergreen-highlight);
+          border-radius: 1rem;
+          ">
         <hgroup>
-          <h3>{{ project.title }}</h3>
+          <h3><span class="go-to-project">Open </span>{{ project.title }}</h3>
           <div class="artifacts">
             @for (artifact of project.artifacts; track artifact) {
               <img [src]="artifact" alt="{{ project.title }} artifact" class="artifact-image">
