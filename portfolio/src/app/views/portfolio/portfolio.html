@@ -1,5 +1,26 @@
 <div class="portfolio-layout">
   <content>
+    <br> <!-- Hard coded card for angular project. Replace with scalable logic. -->
+    <a href="/world-map" class="card">
+      <img src="assets/rasters/worldmap-preview.gif" alt="World Map preview image"
+      style="
+        position: relative;
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        border: 0.1rem solid var(--color-evergreen-highlight);
+        border-radius: 1rem;
+      ">
+      <hgroup>
+        <h3><span class="go-to-project">Open </span>World Map</h3>
+        <div class="artifacts">
+        </div>
+        <p>World Map.</p>
+        <div class="tags">
+          <span class="tag">Angular TypeScript CSS3 HTML5</span>
+        </div>
+      </hgroup>
+    </a>
     <br>
     @for (project of projects; track project.id) {
       <div class="card"
@@ -13,7 +34,7 @@
           object-fit: cover;
           border: 0.1rem solid var(--color-evergreen-highlight);
           border-radius: 1rem;
-          ">
+        ">
         <hgroup>
           <h3><span class="go-to-project">Open </span>{{ project.title }}</h3>
           <div class="artifacts">
@@ -26,7 +47,7 @@
           }
           <div class="tags">
             @for (tag of project.tags; track tag) {
-              <span class="tag">{{ tag }}</span>
+              <span class="tag">{{ tag }}&nbsp;</span>
             }
           </div>
         </hgroup>

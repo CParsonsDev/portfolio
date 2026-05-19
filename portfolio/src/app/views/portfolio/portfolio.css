@@ -10,6 +10,7 @@ hgroup {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width:calc(100% - 25vw);
   gap: 0.5rem;
 }
 
@@ -91,7 +92,8 @@ h3, .tag {
 
 .card:active{
   h3{
-    background-color: var(--color-evergreen-highlight);
+    background-image: none;
+    background-color: var(--color-cloud-highlight);
     box-shadow: inset 0 0.1rem 0.2rem var(--color-cloud-dark);
   }
 }
@@ -143,6 +145,10 @@ h3, .tag {
 
 p{
   text-indent: 1rem;
+}
+
+a{
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark){
