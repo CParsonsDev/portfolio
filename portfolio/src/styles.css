@@ -62,9 +62,12 @@
   --gradient-sky-background: linear-gradient(to bottom, var(--color-sky-light), var(--color-sky-medium-light));
   --gradient-wood-background: linear-gradient(to bottom, var(--color-wood-light), var(--color-wood-medium-light));
 
-  /* Light Button */
-    --color-evergreen-button-pressed: var(--color-evergreen-medium-light);
-    --gradient-evergreen-button-pressed: linear-gradient(var(--color-evergreen-medium-light), var(--color-evergreen-light), var(--color-evergreen-medium-light));
+  /* Universal Button Styles */
+   --gradient-button-default: var(--gradient-cloud-background);
+   --shadow-button-default: inset 0 0 0.3rem var(--color-cloud-text);
+   --shadow-button-active: inset 0 0.1rem 0.2rem var(--color-cloud-dark);
+   --color-button-active: var(--color-cloud-highlight);
+   --color-button-text: var(--color-cloud-text);
 
 }
 
@@ -98,9 +101,6 @@
     --gradient-sky-background: linear-gradient(to bottom, var(--color-sky-medium-light), var(--color-sky-dark));
     --gradient-wood-background: linear-gradient(to bottom, var(--color-wood-medium-light), var(--color-wood-dark));
 
-    /* Dark Button */
-    --color-evergreen-button-pressed: var(--color-evergreen-medium-dark);
-    --gradient-evergreen-button-pressed: linear-gradient(var(--color-evergreen-medium-dark), var(--color-evergreen-medium-light), var(--color-evergreen-medium-dark));
   }
 }
 
@@ -140,6 +140,15 @@ aside{
     color: var(--color-evergreen-highlight);
     background-color: var(--color-evergreen-background);
 
+    ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      height: 100%;
+    }
+
     li{
       list-style-type: none;
     }
@@ -148,11 +157,17 @@ aside{
       padding: 0;
       margin: 0;
     }
+    .nav-header {
+      text-align: center;
+    }
     a, button{
       height: 2.5rem;
       width: 7vw;
 
-      background-color: var(--color-evergreen-background);
+      font-weight: 600;
+
+      background-image: var(--gradient-button-default);
+      box-shadow: var(--shadow-button-default);
       color: var(--color-evergreen-text);
     }
     button {
@@ -182,14 +197,17 @@ aside{
       color: var(--color-evergreen-text);
     }
     a:hover, button:hover {
-      transition: ease-in-out 0.2s;
+      transition: ease-in-out 150ms;
       font-size: 1.05rem;
-      background-color: var(--color-evergreen-highlight);
+      background-color: var(--color-button-active);
     }
     a:active, button:active {
-      text-shadow: var(--color-sky-accent) 0.1rem 0.1rem 0.1rem;
-      border: var(--color-evergreen-button-pressed) 0.1rem solid;
-      background-image: var(--gradient-evergreen-button-pressed);
+      color: var(--color-evergreen-light);
+
+      text-shadow: 0.1rem 0.1rem 0.2rem var(--color-cloud-dark);
+      box-shadow: var(--shadow-button-active);
+      background-image: none;
+      background-color: var(--color-button-active);
     }
   }
 }

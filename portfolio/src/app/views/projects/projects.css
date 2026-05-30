@@ -1,5 +1,5 @@
 .display-wrapper {
-  height: calc(100vh - 4px);
+  height: 100vh;
   max-width: (fit-content, 80vw);
 }
 
