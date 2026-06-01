@@ -53,7 +53,68 @@ p{
 }
 
 .section-intro{
+  border-bottom: dashed 0.3rem var(--color-evergreen-highlight);
+}
+
+.section-content{
+  border-top: none;
+}
+
+.popup-container {
+  text-indent: 0; /* override p indent */
+
+  position: relative;
+  display: inline-block;
+}
+
+.popup-container .popup-content {
+  position: absolute;
+  bottom: 100%;             /* Places the popup directly below the trigger element */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the popup horizontally */
   
+  max-width: 20rem;
+  max-height: 15rem;
+  height: auto;
+  overflow: auto;       /* Enables scrolling if content exceeds max height */
+  z-index: 2;           /* Ensures it stacks above surrounding content */
+  
+  /* Hiding properties optimized for smooth transition animations */
+  background-color: var(--color-evergreen-background-translucent);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.popup-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+
+  img{
+    border: 0.1rem solid var(--color-evergreen-highlight);
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+/* Hover trigger state changes visibility rules */
+.popup-container:hover .popup-content {
+  border: 0.2rem solid var(--color-evergreen-text);
+  border-radius: 1rem;
+  color: var(--color-evergreen-text);
+  background-color: var(--color-evergreen-background);
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 0.3rem 0.3rem var(--color-cloud-dark);
+}
+
+.popup-container:active{
+  .popup-content {
+    border-color: var(--color-evergreen-accent);
+  }
 }
 
 a{
@@ -78,9 +139,10 @@ a:link {
 a:hover {
   transition: ease-in-out 0.3s;
   transform: scale(1.3);
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   color: var(--color-evergreen-background);
   background-color: var(--color-evergreen-text);
+  box-shadow: 0 0.3rem 0.5rem var(--color-cloud-dark);
 }
 a:active {
   transition: ease-in-out 0.2s;
