@@ -54,10 +54,14 @@ p{
 
 .section-intro{
   border-bottom: dashed 0.3rem var(--color-evergreen-highlight);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .section-content{
   border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .popup-container {
@@ -109,6 +113,7 @@ p{
   opacity: 1;
   visibility: visible;
   box-shadow: 0 0.3rem 0.3rem var(--color-cloud-dark);
+  mix-blend-mode: multiply;
 }
 
 .popup-container:active{
