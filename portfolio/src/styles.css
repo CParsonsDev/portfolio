@@ -11,6 +11,7 @@
   --color-evergreen-dark: #0f2802ff;
   --color-sky-light:#c0e1f4ff;
   --color-sky-medium-light: #8db9d6ff;
+  --color-sky-medium-dark: #2e5c7dff;
   --color-sky-dark: #021d28ff;
   --color-wood-light: #fff0d6ff;
   --color-wood-medium-light: #cea962ff;
@@ -208,6 +209,15 @@ aside{
       box-shadow: var(--shadow-button-active);
       background-image: none;
       background-color: var(--color-button-active);
+    }
+
+    .subnav {
+      position: relative;
+      left: 0.25rem;
+      width: 7vw;
+      a, button {
+        width: 6.5vw;
+      }
     }
   }
 }
