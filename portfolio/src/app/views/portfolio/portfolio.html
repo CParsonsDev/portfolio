@@ -1,42 +1,60 @@
 <div class="portfolio-layout">
   <content>
     <br> <!-- Hard coded card for angular project. Replace with scalable logic. -->
-    <a href="/world-map" class="card">
+    <div class="card">
       <img src="assets/rasters/worldmap-preview.gif" alt="World Map preview image"
       style="
         position: relative;
         width: 25vw;
         height: 25vw;
         object-fit: cover;
-        border: 0.1rem solid var(--color-evergreen-highlight);
+        border: 0.1rem solid var(--color-cloud-highlight);
         border-radius: 1rem;
       ">
       <hgroup>
-        <h3><span class="go-to-project">Open </span>World Map</h3>
+        <h3>
+          World Map
+        </h3>
         <div class="artifacts">
         </div>
         <p>World Map.</p>
         <div class="tags">
-          <span class="tag">Angular TypeScript CSS3 HTML5</span>
+          <img class="tag"
+            src="assets/rasters/angular_gradient.png"
+            alt="Official Angular logo">
+          <img class="tag"
+            src="assets/vectors/ts-logo-512.svg"
+            alt="Official TypeScript logo">
+          <img class="tag"
+            src="assets/vectors/CSS_Logo.svg"
+            alt="Official CSS logo">
+          <img class="tag"
+            src="assets/vectors/HTML5_Badge.svg"
+            alt="Official HTML5 badge">
+          <button>
+            <a href="/world-map">
+              Open Interactive World Map in app
+            </a>
+          </button>
         </div>
       </hgroup>
-    </a>
+    </div>
     <br>
     @for (project of projects; track project.id) {
-      <div class="card"
-        [class.active]="selectedSlug() === project.folder"
-        (click)="select(project.folder)">
+      <div class="card">
         <img [src]="project.previewImage" alt="{{ project.title }} preview image"
         style="
           position: relative;
           width: 25vw;
           height: 25vw;
           object-fit: cover;
-          border: 0.1rem solid var(--color-evergreen-highlight);
+          border: 0.1rem solid var(--color-cloud-highlight);
           border-radius: 1rem;
         ">
         <hgroup>
-          <h3><span class="go-to-project">Open </span>{{ project.title }}</h3>
+          <h3>
+            {{ project.title }}
+          </h3>
           <div class="artifacts">
             @for (artifact of project.artifacts; track artifact) {
               <img [src]="artifact" alt="{{ project.title }} artifact" class="artifact-image">
@@ -47,8 +65,14 @@
           }
           <div class="tags">
             @for (tag of project.tags; track tag) {
-              <span class="tag">{{ tag }}&nbsp;</span>
+              <img [src]="tag" alt="{{ project.title }} {{project.tags}}" class="tag">
             }
+            <button>
+              <a [class.active]="selectedSlug() === project.folder"
+                (click)="select(project.folder)">
+                Open {{project.title}} in app
+              </a>
+            </button>
           </div>
         </hgroup>
       </div>
