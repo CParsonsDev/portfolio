@@ -1,5 +1,5 @@
-/* Palette inspired by Hurricane Ridge, WA found here: https://wa.gov/sites/default/files/styles/topic_banner/public/2022-05/hurricane-ridge.jpg?itok=6sy6qzel*/
 :root {
+  /* Palette inspired by Hurricane Ridge, WA found here: https://wa.gov/sites/default/files/styles/topic_banner/public/2022-05/hurricane-ridge.jpg?itok=6sy6qzel*/
   /* Core Color Palette */
   --color-cloud-light:#fafaffff;
   --color-cloud-medium-light:#9898ADff;
@@ -18,25 +18,13 @@
   --color-wood-medium-dark: #624119ff;
   --color-wood-dark: #271602ff;
 
-  /* Transparent Variants */
+  /* Light Color Scheme
 
-  --color-cloud-light-transparent:#fafaff00;
-  --color-cloud-medium-light-transparent:#9898AD00;
-  --color-cloud-medium-dark-transparent:#3E3E4F00;
-  --color-cloud-dark-transparent:#02021000;
-  --color-evergreen-light-transparent: #e7f6b400;
-  --color-evergreen-medium-light-transparent:#96aa4d00;
-  --color-evergreen-medium-dark-transparent:#34601d00;
-  --color-evergreen-dark-transparent: #0f280200;
-  --color-sky-light-transparent:#c0e1f400;
-  --color-sky-medium-light-transparent: #8db9d600;
-  --color-sky-dark-transparent: #021d2800;
-  --color-wood-light-transparent: #fff0d600;
-  --color-wood-medium-light-transparent: #cea96200;
-  --color-wood-medium-dark-transparent: #62411900;
-  --color-wood-dark-transparent: #27160200;
-
-  /* Light Color Scheme */
+    text = dark
+    accent = medium-dark
+    highlight = medium-light
+    background = light
+  */
   --color-cloud-background:var(--color-cloud-light);
   --color-cloud-highlight:var(--color-cloud-medium-light);
   --color-cloud-accent:var(--color-cloud-medium-dark);
@@ -56,25 +44,17 @@
   --color-wood-highlight:var(--color-wood-medium-light);
   --color-wood-accent:var(--color-wood-medium-dark);
   --color-wood-text:var(--color-wood-dark);
-
-  /* Light Background Gradients */
-  --gradient-cloud-background: linear-gradient(to bottom, var(--color-cloud-light), var(--color-cloud-medium-light));
-  --gradient-evergreen-background: linear-gradient(to bottom, var(--color-evergreen-light), var(--color-evergreen-medium-light));
-  --gradient-sky-background: linear-gradient(to bottom, var(--color-sky-light), var(--color-sky-medium-light));
-  --gradient-wood-background: linear-gradient(to bottom, var(--color-wood-light), var(--color-wood-medium-light));
-
-  /* Universal Button Styles */
-   --gradient-button-default: var(--gradient-cloud-background);
-   --shadow-button-default: inset 0 0 0.3rem var(--color-cloud-text);
-   --shadow-button-active: inset 0 0.1rem 0.2rem var(--color-cloud-dark);
-   --color-button-active: var(--color-cloud-highlight);
-   --color-button-text: var(--color-cloud-text);
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark Color Scheme */
+    /* Dark Color Scheme
+
+      text = light
+      accent = medium-light
+      highlight = medium-dark
+      background = dark
+    */
     --color-cloud-text: var(--color-cloud-light);
     --color-cloud-accent: var(--color-cloud-medium-light);
     --color-cloud-highlight:var(--color-cloud-medium-dark);
@@ -94,19 +74,15 @@
     --color-wood-accent: var(--color-wood-medium-light);
     --color-wood-highlight:var(--color-wood-medium-dark);
     --color-wood-background: var(--color-wood-dark);
-
-    /* Dark Background Gradients */
-
-    --gradient-cloud-background: linear-gradient(to bottom, var(--color-cloud-medium-light), var(--color-cloud-dark));
-    --gradient-evergreen-background: linear-gradient(to bottom, var(--color-evergreen-medium-light), var(--color-evergreen-dark));
-    --gradient-sky-background: linear-gradient(to bottom, var(--color-sky-medium-light), var(--color-sky-dark));
-    --gradient-wood-background: linear-gradient(to bottom, var(--color-wood-medium-light), var(--color-wood-dark));
-
   }
 }
 
 html{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Standard sans serif fonts*/
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
   width: 100vw;
   * {
     padding: 0;
@@ -121,8 +97,112 @@ body{
   background-color: var(--color-cloud-background);
 }
 
-p{
+h1{
+  font-family: "Dela Gothic One","Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 5rem;
   color: var(--color-cloud-text);
+  letter-spacing: +.125rem;
+  @media (prefers-color-scheme: dark){
+    color: var(--color-wood-light);
+  }
+}
+
+.subtitle{
+  font-family: "Familjen Grotesk","Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-cloud-accent);
+}
+
+h2{
+  font-family: "Familjen Grotesk","Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-cloud-text);
+}
+
+h3{
+  font-family: "Familjen Grotesk","Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-cloud-text);
+}
+
+p,li,.copy{
+  font-family: "Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-cloud-text);
+}
+
+strong,.emphasized{
+  font-family: "Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-wood-accent);
+}
+
+i,.note{
+  font-family: "Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-evergreen-accent);
+}
+
+button{
+  font-family: "Familjen Grotesk","Inter",-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 700;
+  /*
+    Buttons have a fixed appearance regardless of light/dark preference.
+    If buttons contain links, they are blue, else they are green.
+  */
+  color:var(--color-evergreen-dark);
+  background-color: var(--color-evergreen-medium-light);
+  border: var(--color-evergreen-medium-dark) 0.1rem solid;
+  border-radius: .25rem;
+
+  cursor: pointer;
+  
+}
+
+button:has(a){
+  color: var(--color-sky-dark);
+  background-color: var(--color-sky-medium-light);
+  border-color: var(--color-sky-medium-dark);
+}
+
+button a,button a:link,button a:visited,button a:hover,button a:active {
+  color: var(--color-sky-dark);
+  background-color: none;
+  border-color: none;
+}
+
+button:has(a:hover){
+  transition: ease-in-out 100ms;
+  background-color: var(--color-sky-light);
+  border-color: var(--color-sky-medium-light);
+}
+
+button:has(a:active){
+  background-color: var(--color-sky-medium-dark);
+  border-color: var(--color-sky-medium-dark);
 }
 
 aside{
@@ -132,14 +212,16 @@ aside{
 
   height: 100vh;
   width: 8vw;
+  
+  background-color: var(--color-sky-background);
+  border-right: 0.1rem solid var(--color-sky-highlight);
 
   nav{
     height: 100vh;
     width: 8vw;
     position: fixed;
 
-    color: var(--color-evergreen-highlight);
-    background-color: var(--color-evergreen-background);
+    cursor:default;
 
     ul{
       display: flex;
@@ -154,6 +236,24 @@ aside{
       list-style-type: none;
     }
 
+    li.supernav::after{
+      /* Inserts a thin divider between page header and element references. */
+      content: '';
+      display: block;
+      width: 100%;
+      height: .25rem;
+      background-color: var(--color-sky-accent);
+    }
+
+    li.supernav::before{
+      /* Inserts a thick divider between sections */
+      content: '';
+      display: block;
+      width: 100%;
+      height: .5rem;
+      background-color: var(--color-sky-highlight);
+    }
+
     > *{
       padding: 0;
       margin: 0;
@@ -162,20 +262,11 @@ aside{
       text-align: center;
     }
     a, button{
-      height: 2.5rem;
+      height: 3rem;
       width: 7vw;
-
-      font-weight: 600;
-
-      background-image: var(--gradient-button-default);
-      box-shadow: var(--shadow-button-default);
-      color: var(--color-evergreen-text);
     }
     button {
-      border: var(--color-evergreen-background) 0.1rem solid;
-      border-radius: 1rem;
       margin: 0.3rem;
-      cursor: pointer;
     }
     a {
       position: relative;
@@ -191,31 +282,12 @@ aside{
       border-radius: 0.5rem;
       text-decoration: none;
     }
-    a:link {
-      color: var(--color-cloud-text);
-    }
-    a:visited {
-      color: var(--color-evergreen-text);
-    }
-    a:hover, button:hover {
-      transition: ease-in-out 150ms;
-      font-size: 1.05rem;
-      background-color: var(--color-button-active);
-    }
-    a:active, button:active {
-      color: var(--color-evergreen-light);
-
-      text-shadow: 0.1rem 0.1rem 0.2rem var(--color-cloud-dark);
-      box-shadow: var(--shadow-button-active);
-      background-image: none;
-      background-color: var(--color-button-active);
-    }
 
     .subnav {
       position: relative;
-      left: 0.25rem;
       width: 7vw;
       a, button {
+        font-size: 0.875rem;
         width: 6.5vw;
       }
     }
@@ -228,14 +300,6 @@ app-root {
   overflow: auto;
 
   background-image: var(--gradient-cloud);
-}
-
-@media (prefers-color-scheme: dark) {
-  nav{
-    a:hover, button:hover {
-      text-shadow: var(--color-sky-dark) 0.1rem 0.1rem 0.1rem;
-    }
-  }
 }
 
 /* Extra small devices (phones, 600px and down) */

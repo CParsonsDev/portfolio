@@ -12,7 +12,10 @@
   align-items: center;
   justify-content: center;
 
-  background-image: var(--gradient-cloud-background);
+  background-image:linear-gradient(
+    var(--color-cloud-highlight),
+    var(--color-cloud-background)
+  );
 }
 
 iframe {
