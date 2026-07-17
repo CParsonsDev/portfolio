@@ -12,6 +12,34 @@ I intend to include more exciting projects as they are developed and provide a b
 
 I want to work with people to help them with their projects! I want this portfolio app to convince people that I'm a fun professional that does good work, and understand how they can get ahold of me if they're interested in what I can do for them.
 
+## Run the app
+
+To run this application, you have two (2) options:
+
+1. Download the application and run as an Angular application by building a development server. You'll need a compatible version of Angular installed on your device to do this.
+
+2. Download the application and build and run as an optimized JavaScript application. You'll need a compatible version of Angular installed on your device to do this.
+
+### Development server
+
+To start a local development server, run:
+
+```bash
+ng serve
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+### Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
 ## Design & Requirements
 
 ### Design
