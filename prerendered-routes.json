@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/portfolio/about": {},
+    "/portfolio/portfolio": {},
+    "/portfolio/projects": {},
+    "/portfolio/world-map": {}
+  }
+}

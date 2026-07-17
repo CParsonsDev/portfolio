@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Wireframe.svg"
+   inkscape:export-filename="Wireframe.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="0.44194174"
+     inkscape:cx="970.71619"
+     inkscape:cy="422.00133"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1">
+    <rect
+       x="25"
+       y="917.99957"
+       width="1870"
+       height="162.00043"
+       id="rect36" />
+    <rect
+       x="25"
+       y="917.99957"
+       width="1870"
+       height="162.00043"
+       id="rect29" />
+    <rect
+       x="580.19995"
+       y="580.5"
+       width="1314.8"
+       height="325"
+       id="rect25" />
+    <rect
+       x="580.20001"
+       y="243"
+       width="1314.8"
+       height="325"
+       id="rect24" />
+    <image
+       width="287"
+       height="123"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR8AAAB7CAMAAAB6m3SHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGeUExURf////////39/f7+/u/z9oCdtp+1yL/O2tfg6PP3+9fk8rjP6LPM5rzS6dnl8t3p9Pj4+ODg4L29vbOzs8HBwdnZ2eLi4t/m7QA7bRhNe0BskmCFpPX5/K7J5GuczmaZzIyz2Za53Pr6+ry8vHV1dWdnZ3FxcY2NjaCgoOfn5xBHdq/C0fH1+qTD4cXZ7PX19Zubm8vLy7fI1uzy+fHx8aqqqmxsbM/Pz+Ls9Yiv13mm0s/f7+zs7JKSkoSEhFB4m8/a5Pr8/anG4oOs1q+vr8rc7cbGxghBcoejunCfz5G22np6eqWlpSBUf3Sj0eft8YiIiKC/39TU1HiXsjhmjWiLqX6p1I+pv3CRrbe3t5eXl/f5+lh/n7fP597e3n9/f0hyljBgiPLy8snJyZOTk4uLi8HV6qe7zdTi8bKysufv99nm8/n5+fDw8Ojo6OPj49/f38/a48fU33+dtpevw93o9DBgiShahFh/oI2z2Yiw13mm06nG48DV6qDA4MXY7LLM5ae7zFB5m6/B0dTi8JG225ycnMrKyt7o9P39/YZwbfAAAACKdFJOU4D/lLD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////hDt4LDMAAAAJcEhZcwAADsMAAA7DAcdvqGQAABEYSURBVHhe7Z2NXxTHGcfdlkDaGtP2OOTF+HLKHRDjJQqHVcAYCRgBNb5EgURMX5I0fVWsxjRtjLbS/tf9/Z7nmdm53eWwsoeL8vt89GZnd2ZnvjvzzMzuzLBrV7SjFtr1I3PsKFO7fmyOHWWKfDpeez51dnW9btFQP/npz3ZDb+zZ86b5UD//xS9LpVJ3udxjHttL5LO3dxPq6x/odJT2vbX/gGr/wUNvOEqVw0cGRdXaUPeweW4XbZqPaGTgbY3u6DsGiNp/6Ng+8a2XqkoIqr77XkU8t4fy4QONDByXCE8cMjqqQ8fEd3SsYXyg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"
+       preserveAspectRatio="none"
+       id="img0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <g
+         id="g6"
+         style="stroke-width:17495.7"
+         transform="matrix(5.7174875e-5,0,0,5.7138877e-5,0,0)">
+        <rect
+           x="0"
+           y="0"
+           width="5019675"
+           height="2152644.2"
+           id="rect5"
+           style="stroke-width:24407.6" />
+      </g>
+    </clipPath>
+    <filter
+       id="mask-powermask-path-effect11_inverse"
+       inkscape:label="filtermask-powermask-path-effect11"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect11_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect11_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect12_inverse"
+       inkscape:label="filtermask-powermask-path-effect12"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect12_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect12_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect15_inverse"
+       inkscape:label="filtermask-powermask-path-effect15"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect15_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect15_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Footer"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:highlight-color="#3ed6e3">
+    <rect
+       style="fill:#bdbdbd;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       id="bg-footer-silver"
+       width="1920"
+       height="201.99995"
+       x="0"
+       y="878"
+       inkscape:label="bg-footer-silver" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       id="bg-footer-text"
+       width="1870"
+       height="201.99995"
+       x="25"
+       y="878"
+       rx="12.5"
+       ry="12.5" />
+    <text
+       xml:space="preserve"
+       id="txt-footer"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect36);display:inline;fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       transform="translate(-1.6523437,-19.046821)"><tspan
+         x="478.06641"
+         y="943.22112"
+         id="tspan3"><tspan
+           style="fill:#676767"
+           id="tspan1">Paradigm Pet Professionals has 12 years’ experience working with pet owners, 
+</tspan></tspan><tspan
+         x="395.47461"
+         y="978.22112"
+         id="tspan5"><tspan
+   style="fill:#676767"
+   id="tspan4">certifications in pet health and nutrition, and customer recognition for outstanding support.</tspan>
+</tspan><tspan
+         x="115.87207"
+         y="1020.4272"
+         id="tspan10"><tspan
+           style="font-size:36px"
+           id="tspan6">For virtual consultations and presentations, one-on-one consultations concerning individual pets, or group </tspan></tspan><tspan
+         x="436.68164"
+         y="1065.4272"
+         id="tspan12"><tspan
+           style="font-size:36px"
+           id="tspan11">presentations regarding general pet care, contact a Pexpert today. </tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Primary Content">
+    <rect
+       style="fill:#676767;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       id="bg-content-dim-gray"
+       width="1920"
+       height="350"
+       x="0"
+       y="528"
+       inkscape:label="bg-content-dim-gray" />
+    <rect
+       style="fill:#6699cc;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       id="bg-content-blue-sky"
+       width="1920"
+       height="285"
+       x="0"
+       y="243"
+       inkscape:label="bg-content-blue-sky" />
+    <g
+       id="g4"
+       inkscape:label="img-placeholder"
+       transform="matrix(1.0000019,0,0,0.99999912,9.9999715,139.49975)"
+       style="stroke-width:0.999998;stroke:none">
+      <rect
+         style="stroke:none;fill:#6699cc;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         id="img-square-blue-sky"
+         width="526.00098"
+         height="525.99951"
+         x="26"
+         y="317.50024"
+         rx="25"
+         ry="25"
+         inkscape:label="img-square-blue-sky"
+         transform="matrix(0.9999981,0,0,1.0000009,-9.9999525,-139.49987)" />
+      <path
+         id="img-triangles-midnight-blue"
+         style="stroke-width:2;fill:#003b6d;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 40.999951 178.00041 C 27.149991 178.00041 15.999998 189.15043 15.999998 203.00043 L 15.999998 679.00085 C 15.999998 686.44829 19.287755 693.04188 24.421857 697.61415 L 277.69481 443.08267 L 533.98534 697.27625 C 538.89088 692.71746 541.999 686.25679 541.999 679.00085 L 541.999 203.00043 C 541.999 189.15043 530.84901 178.00041 516.99905 178.00041 L 40.999951 178.00041 z "
+         inkscape:label="img-triangles-midnight-blue" />
+      <path
+         id="img-triangle-silver"
+         style="fill:#bdbdbd;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 264.72999 178.00041 L 37.269489 178.37345 C 31.524194 179.23303 26.455387 181.98794 22.697251 186.04534 L 280.30418 441.54361 L 534.95604 185.62737 C 530.41657 180.93476 524.07391 178.00041 516.99905 178.00041 L 264.72999 178.00041 z " />
+    </g>
+    <g
+       id="g8"
+       inkscape:label="content-copy"
+       style="stroke-width:0.999998;stroke:none">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         id="bg-content-text-2"
+         width="1314.8"
+         height="325"
+         x="580.19995"
+         y="540.5"
+         rx="12.5"
+         ry="12.5" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         id="bg-content-text-1"
+         width="1314.8"
+         height="285"
+         x="580.20001"
+         y="243"
+         rx="12.5"
+         ry="12.500001" />
+      <text
+         xml:space="preserve"
+         id="txt-content-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:start;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect25);display:inline;fill:#676767;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         x="-2584.9375"
+         y="0"
+         transform="translate(10,-26)"
+         inkscape:label="txt-content-2"><tspan
+           x="580.19922"
+           y="609.32414"
+           id="tspan14"><tspan
+             style="font-size:28px"
+             id="tspan13">Looking for basic pet care advice for the most common type of pets? Need additional help determining </tspan></tspan><tspan
+           x="580.19922"
+           y="649.32414"
+           id="tspan16"><tspan
+             style="font-size:28px"
+             id="tspan15">which type of pet is right for you and your family? We will work with you and provide tailored evidence-</tspan></tspan><tspan
+           x="580.19922"
+           y="689.32414"
+           id="tspan18"><tspan
+             style="font-size:28px"
+             id="tspan17">based pet care to ensure lifelong health and wellness of your new companion. 
+</tspan></tspan><tspan
+           x="580.19922"
+           y="729.32414"
+           id="tspan24"><tspan
+             style="font-size:28px"
+             id="tspan19">•</tspan><tspan
+             style="font-size:28px"
+             id="tspan20">	</tspan><tspan
+             style="font-size:28px"
+             id="tspan21">General Pet Resources: </tspan><tspan
+             style="font-size:28px;fill:#003b6d"
+             id="tspan22">https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources</tspan><tspan
+             style="font-size:28px"
+             id="tspan23">
+</tspan></tspan><tspan
+           x="580.19922"
+           y="769.32414"
+           id="tspan38"><tspan
+             style="font-size:28px"
+             id="tspan29">•</tspan><tspan
+             style="font-size:28px"
+             id="tspan30">	</tspan><tspan
+             style="font-size:28px"
+             id="tspan35">ASPCA: </tspan><tspan
+             style="font-size:28px;fill:#003b6d"
+             id="tspan36">https://www.aspca.org/ </tspan><tspan
+             style="font-size:28px"
+             id="tspan37">
+</tspan></tspan><tspan
+           x="580.19922"
+           y="809.32414"
+           id="tspan44"><tspan
+             style="font-size:28px"
+             id="tspan39">•</tspan><tspan
+             style="font-size:28px"
+             id="tspan40">	</tspan><tspan
+             style="font-size:28px"
+             id="tspan41">Fish Rescue: </tspan><tspan
+             style="font-size:28px;fill:#003b6d"
+             id="tspan42">https://www.sterlingshelter.org/humane-society/koi-fish-rescue/</tspan><tspan
+             style="font-size:28px"
+             id="tspan43">
+</tspan></tspan><tspan
+           x="580.19922"
+           y="849.32414"
+           id="tspan48"><tspan
+             style="font-size:28px"
+             id="tspan45">•</tspan><tspan
+             style="font-size:28px"
+             id="tspan46">	</tspan><tspan
+             style="font-size:28px"
+             id="tspan47">Snake Rescue: https://savethesnakes.org/snakerescuecall/
+</tspan></tspan><tspan
+           x="580.19922"
+           y="889.32414"
+           id="tspan52"><tspan
+   style="font-size:28px"
+   id="tspan49">•</tspan><tspan
+   style="font-size:28px"
+   id="tspan50">	</tspan><tspan
+   style="font-size:28px"
+   id="tspan51">Bird Rescue: https://ftlob.rescuegroups.org/</tspan>
+</tspan></text>
+      <text
+         xml:space="preserve"
+         id="txt-content-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect24);display:inline;fill:#676767;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         transform="translate(-0.70269775,19.497626)"
+         inkscape:label="txt-content-1"><tspan
+           x="583.18164"
+           y="268.22112"
+           id="tspan53">Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a </tspan><tspan
+           x="598.86328"
+           y="303.22112"
+           id="tspan54">pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet </tspan><tspan
+           x="604.4209"
+           y="338.22112"
+           id="tspan55">Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, </tspan><tspan
+           x="650.61816"
+           y="373.22112"
+           id="tspan56">and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and </tspan><tspan
+           x="632.3457"
+           y="408.22112"
+           id="tspan57">professionals alike for the past twelve years. They offer one-on-one consultations with current and </tspan><tspan
+           x="629.75488"
+           y="443.22112"
+           id="tspan58">prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet </tspan><tspan
+           x="1094.332"
+           y="478.22112"
+           id="tspan59">breeding professionals.</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Header">
+    <g
+       id="navbar"
+       inkscape:label="navbar"
+       transform="matrix(1.1416681,0,0,0.30589619,1300.2159,105.46771)"
+       style="stroke-width:1.69216">
+      <rect
+         style="fill:#003b6d;fill-opacity:1;stroke:#6699cc;stroke-width:3.38433;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+         id="bg-navbar"
+         width="1680.0575"
+         height="261.41138"
+         x="-1137.1816"
+         y="186.5009"
+         inkscape:label="bg-navbar" />
+      <g
+         id="bg-navbar-links"
+         transform="matrix(0.87591131,0,0,3.2690829,-1138.8738,846.79803)"
+         style="stroke-width:1.69216">
+        <rect
+           style="fill:#6699cc;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           id="bg-home"
+           width="369"
+           height="56"
+           x="12.5"
+           y="-192"
+           rx="12.5"
+           ry="12.5" />
+        <rect
+           style="fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           id="bg-cats"
+           width="369"
+           height="56"
+           x="394"
+           y="-192" />
+        <rect
+           style="fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           id="bg-dogs"
+           width="369"
+           height="56"
+           x="775.5"
+           y="-192" />
+        <rect
+           style="fill:#676767;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           id="bg-more-pets"
+           width="369"
+           height="56"
+           x="1157"
+           y="-192"
+           inkscape:label="bg-more-pets"
+           rx="12.5"
+           ry="12.5" />
+        <rect
+           style="fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           id="bg-birds"
+           width="394"
+           height="81"
+           x="1144.5"
+           y="-122.07884"
+           inkscape:label="bg-birds" />
+        <rect
+           style="fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+           id="bg-contact-a-pexpert"
+           width="369"
+           height="56"
+           x="1538.5"
+           y="-192" />
+      </g>
+    </g>
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+       id="rect2"
+       width="1920"
+       height="162.00043"
+       x="0"
+       y="0"
+       inkscape:label="bg-header" />
+    <g
+       id="g3"
+       inkscape:label="Company-Logo"
+       transform="scale(0.71681521)"
+       style="stroke-width:1.39506"
+       sodipodi:insensitive="true">
+      <use
+         width="100%"
+         height="100%"
+         xlink:href="#img0"
+         transform="scale(1.8362436,1.8374005)"
+         id="use1"
+         style="stroke-width:1.39506"
+         clip-path="url(#clipPath5)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Italic';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       x="1147.032"
+       y="120.5054"
+       id="company-slogan"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="1147.032"
+         y="120.5054"
+         style="font-size:48px">Evidence-based pet care advice for every pet lover</tspan><tspan
+         sodipodi:role="line"
+         x="1147.032"
+         y="187.17203"
+         id="tspan9" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       x="195.93556"
+       y="214.25977"
+       id="txt-home"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         x="195.93556"
+         y="214.25977"
+         style="font-size:40px">Home</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       x="578.25586"
+       y="214.49414"
+       id="txt-cats"><tspan
+         sodipodi:role="line"
+         id="tspan7-2"
+         x="578.25586"
+         y="214.49414"
+         style="font-size:40px">Cats</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Italic';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       x="958.87695"
+       y="209.80664"
+       id="txt-dogs"><tspan
+         sodipodi:role="line"
+         id="tspan7-1"
+         x="958.87695"
+         y="209.80664"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff;fill-opacity:1">Dogs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Italic';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#003b6d;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       x="1340.377"
+       y="297.48172"
+       id="txt-birds"
+       inkscape:label="txt-birds"><tspan
+         sodipodi:role="line"
+         id="tspan7-1-0"
+         x="1340.377"
+         y="297.48172"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff;fill-opacity:1">Birds</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';text-align:center;text-decoration-color:#000000;text-anchor:middle;white-space:pre;inline-size:398.187;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       x="1356.0938"
+       y="261.34656"
+       id="txt-more-pets"
+       transform="translate(-15.716783,-46.286011)"
+       inkscape:label="txt-more-pets"><tspan
+         x="1356.0938"
+         y="261.34656"
+         id="tspan60">More Pets</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers fill stroke"
+       x="1722.7168"
+       y="210.13867"
+       id="txt-contact-a-pexpert"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         x="1722.7168"
+         y="210.13867">Contact a Pexpert</tspan></text>
+  </g>
+</svg>

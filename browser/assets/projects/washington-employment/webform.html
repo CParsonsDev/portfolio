@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ask a Question</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body class="no-space">
+        <header>
+            <header>
+                <h1 class="no-space">Ask a Question</h1>
+                <nav class="dropdown-container no-space">
+                    <button class="dropdown-button">Related Pages <span class="down-arrow">&#11206;</span></button>
+                    <div class="dropdown-content">
+                        <span class="down-arrow">&#11206;</span>
+                        <p>State</p>
+                        <a href="index.html">Washington</a>
+                        <span class="down-arrow">&#11206;</span>
+                        <p>Cities</p>
+                        <a href="olympia.html">Olympia</a>
+                        <a href="vancouver.html">Vancouver</a>
+                        <a href="kelso.html">Kelso</a>
+                        <span class="down-arrow">&#11206;</span>
+                        <p>More Info</p>
+                        <a href="webform.html">Ask a Question</a>
+                    </div>    
+                </nav>
+            </header>
+        <main>
+            <form class="no-space" name="user-question" id="user-question" autocomplete="off">
+                <label for="first-name" autofocus>First name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First">
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last">
+                <label for="email" required>email:</label>
+                <input type="email" name="email" id="email" placeholder="User@server.com">
+                <label for="email" required>Confirm email:</label>
+                <input type="email" name="email-confirm" id="email-confirm"placeholder="User@server.com">
+                <label for="question">Enter your question:</label>
+                <input type="textarea" name="question" id="question" rows="4"placeholder="ex: Where can I get more information about this?">
+                <input type="submit" value="Submit question" onclick="emailmatch()">
+            </form>
+        </main>
+    </body>
+</html>
