@@ -38,7 +38,10 @@ export const PROJECT_DATA: ProjectData[] = [
       'assets/vectors/CSS_Logo.svg',
       'assets/vectors/HTML5_Badge.svg'
     ],
-    artifacts:[],
+    artifacts:[
+      'assets/project-artifacts/graphics-processing-artifacts/PersonalBrandGuidelinesTitle2026.svg',
+      'assets/project-artifacts/graphics-processing-artifacts/PersonalBrandGuidelinesColors2026.svg'
+    ],
     githubLink:''
   }
 
