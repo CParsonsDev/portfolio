@@ -1,26 +1,107 @@
+:root{
+  /* Core Color Palette */
+
+  /*
+    "Cloud" gray is the primary neutral color.
+    These colors should be used when an element doesn't need to stand out.
+  */
+  --color-cloud-light:#fafaffff;
+  --color-cloud-medium-light:#9898ADff;
+  --color-cloud-medium-dark:#3E3E4Fff;
+  --color-cloud-dark:#020210ff;
+
+  /*
+    "Evergreen" green is a complementary color.
+    These colors should be used when an element should be different,
+    but not when it would span a large area or be in focus.
+  */
+  --color-evergreen-light: #e7f6b4ff;
+  --color-evergreen-medium-light:#96aa4dff;
+  --color-evergreen-medium-dark:#34601dff;
+  --color-evergreen-dark: #0f2802ff;
+
+  /*
+    "Sky" blue is a secondary color. The feel of the app as a whole should be:
+      "Cloud gray with Sky Blue."
+    These colors should be used to distinguish core interactive elements from
+      menus and other supporting elements.
+    All redirecting link ekements should be this color.
+  */
+  --color-sky-light:#c0e1f4ff;
+  --color-sky-medium-light: #8db9d6ff;
+  --color-sky-medium-dark: #2e5c7dff;
+  --color-sky-dark: #021d28ff;
+  /*
+    "Wood" brown is a highlight color.
+    This color is meant to stand out against the main colors blue and gray.
+  */
+  --color-wood-light: #fff0d6ff;
+  --color-wood-medium-light: #cea962ff;
+  --color-wood-medium-dark: #624119ff;
+  --color-wood-dark: #271602ff;
+}
+
+/* Fonts */
+:root{
+  /* Do not use the following helpers */
+  --font-fallback1: Arial;
+  --font-fallback2: sans-serif;
+
+  /* Do use the following names variables */
+  --font-display: 'Dela Gothic One',
+    var(--font-fallback1),
+    var(--font-fallback2);
+  --font-header: 'Familjen Grotesk',
+    var(--font-fallback1),
+    var(--font-fallback2);;
+  --font-copy: 'Inter',
+    var(--font-fallback1),
+    var(--font-fallback2);;
+}
+
 /* Light Mode (Default) */
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #333;
+  font-family: var(--font-copy);
+  background: var(--color-cloud-light);
+  color: var(--color-cloud-dark);
   margin: 0;
-  padding: 20px;
+  padding: 2rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body[data-theme="light"] {
-  background: #f5f5f5;
-  color: #333;
+  accent-color: var(--color-sky-medium-dark);
+  background: var(--color-sky-light);
+  color: var(--color-cloud-dark);
 }
 
 /* Dark Mode */
 body[data-theme="dark"] {
-  background: #111;
-  color: #eee;
+  accent-color: var(--color-sky-medium-light);
+  background: var(--color-sky-dark);
+  color: var(--color-cloud-light);
 }
 
 h1 {
+  font-family: var(--font-display);
+  font-size: 4rem;
   margin-top: 0;
+}
+
+h2 {
+  font-family: var(--font-header);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--font-header);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* App Header */
@@ -28,55 +109,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 0 0 16px 0;
-  border-bottom: 2px solid;
+  margin-bottom: 1rem;
+  padding: 0 0 1rem 0;
+  border-bottom: 0.2rem solid;
 }
 
 body[data-theme="light"] .app-header {
-  border-bottom-color: #ddd;
+  border-bottom-color: var(--color-wood-medium-light);
 }
 
 body[data-theme="dark"] .app-header {
-  border-bottom-color: #444;
-}
-
-.app-header h1 {
-  margin: 0;
-  flex: 1;
-}
-
-/* Button Styling */
-.btn-icon {
-  background: transparent;
-  border: 2px solid;
-  font-size: 1.2rem;
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body[data-theme="light"] .btn-icon {
-  border-color: #ddd;
-  color: #333;
-}
-
-body[data-theme="light"] .btn-icon:hover {
-  background: #e0e0e0;
-}
-
-body[data-theme="dark"] .btn-icon {
-  border-color: #555;
-  color: #eee;
-}
-
-body[data-theme="dark"] .btn-icon:hover {
-  background: #333;
+  color: var(--color-wood-light);
+  border-bottom-color: var(--color-wood-medium-dark);
 }
 
 .wrap {
@@ -85,41 +129,44 @@ body[data-theme="dark"] .btn-icon:hover {
 }
 
 .card {
-  padding: 16px;
-  border-radius: 16px;
-  margin-bottom: 16px;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
   transition: background-color 0.3s ease;
 }
 
 body[data-theme="light"] .card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: var(--color-cloud-light);
 }
 
 body[data-theme="dark"] .card {
-  background: #1b1b1b;
+  background: var(--color-cloud-dark);
 }
 
 /* Advanced Settings Panel */
 .advanced-settings-panel {
   background: inherit;
-  border-radius: 12px;
-  border: 1px solid;
+  border-radius: 0.75rem;
+  border: 0.1rem solid;
   padding: 0;
-  margin-bottom: 16px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
 
 body[data-theme="light"] .advanced-settings-panel {
-  border-color: #e0e0e0;
+  border-color: var(--color-sky-light);
 }
 
 body[data-theme="dark"] .advanced-settings-panel {
-  border-color: #444;
+  border-color: var(--color-sky-dark);
 }
 
 .panel-summary {
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
   cursor: pointer;
   font-weight: bold;
   display: flex;
@@ -129,53 +176,54 @@ body[data-theme="dark"] .advanced-settings-panel {
   transition: background-color 0.2s ease;
 }
 
-.panel-summary:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+body[data-theme="light"] .panel-summary:hover {
+  background-color: var(--color-wood-light);
 }
 
 body[data-theme="dark"] .panel-summary:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--color-wood-dark);
 }
 
 details .panel-body {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .settings-group {
-  margin: 16px 0;
-  padding: 12px 0;
-  border-bottom: 1px solid;
+  margin: 1rem 0;
+  padding: 0.75rem 0;
+  border-bottom: 0.1rem solid;
 }
 
 body[data-theme="light"] .settings-group {
-  border-color: #e0e0e0;
+  border-color: var(--color-cloud-light);
 }
 
 body[data-theme="dark"] .settings-group {
-  border-color: #444;
+  border-color: var(--color-cloud-medium-light);
 }
 
 .settings-group h4 {
-  margin: 0 0 8px 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .settings-option {
   display: flex;
   align-items: center;
-  margin: 8px 0;
+  margin: 0.5rem 0;
   cursor: pointer;
 }
 
 .settings-option input {
-  margin-right: 8px;
+  margin-right: 0.5rem;
   cursor: pointer;
 }
 
 /* Control Panel */
 .control-panel {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
+.advanced-settings-panel summary, 
 .control-panel summary {
   background: inherit;
   display: flex;
@@ -186,25 +234,25 @@ body[data-theme="dark"] .settings-group {
   font-weight: bold;
 }
 
+.advanced-settings-panel summary::after,
 .control-panel summary::after {
-  content: '▾';
-  margin-left: 12px;
+  content: 'hide';
+  margin-left: 0.75rem;
   font-size: 1rem;
-  width: 1.7rem;
+  width: 4.9rem;
   height: 1.7rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  color: #fff;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 6px 18px rgba(0, 0, 0, 0.35);
+  background-color: var(--color-evergreen-medium-light);
+  color: var(--color-evergreen-dark);
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
+.advanced-settings-panel:not([open]) summary::after ,
 .control-panel:not([open]) summary::after {
-  content: '▸';
-  transform: translateX(-1px);
+  content: 'show';
+  transform: translateX(-0.1rem);
 }
 
 .control-panel summary h3 {
@@ -212,7 +260,7 @@ body[data-theme="dark"] .settings-group {
 }
 
 .control-panel .panel-body {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .svg-controls.disabled {
@@ -221,27 +269,28 @@ body[data-theme="dark"] .settings-group {
 }
 
 /* Grid Layout */
-.row {
+.row,
+.control-panel .panel-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.75rem;
 }
 
 .preview {
   width: 100%;
-  border-radius: 12px;
-  border: 1px solid;
+  border-radius: 0.75rem;
+  border: 0.1rem solid;
   transition: border-color 0.3s ease;
 }
 
 body[data-theme="light"] .preview {
-  background: #f9f9f9;
-  border-color: #e0e0e0;
+  background: var(--color-cloud-light);
+  border-color: var(--color-sky-medium-light);
 }
 
 body[data-theme="dark"] .preview {
-  background: #222;
-  border-color: #444;
+  background: var(--color-cloud-dark);
+  border-color: var(--color-sky-dark);
 }
 
 body[data-theme="light"] .light-bg {
@@ -249,32 +298,7 @@ body[data-theme="light"] .light-bg {
 }
 
 body[data-theme="dark"] .light-bg {
-  background: #222 !important;
-}
-
-/* Buttons */
-.btn {
-  background: #4f46e5;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.btn:hover {
-  background: #4338ca;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.btn.small {
-  font-size: 0.7rem;
-  padding: 4px 8px;
+  background: #fff !important;
 }
 
 /* Text Sizes */
@@ -283,16 +307,90 @@ body[data-theme="dark"] .light-bg {
 }
 
 body[data-theme="light"] .small {
-  color: #666;
+  color: var(--color-cloud-medium-dark);
 }
 
 body[data-theme="dark"] .small {
-  color: #aaa;
+  color: var(--color-cloud-medium-light);
 }
 
 /* Canvas */
 canvas {
   image-rendering: pixelated;
+}
+
+/*
+  Input styling:
+    + Button
+    + Select
+    + Input
+    + Slider
+*/
+
+button,
+select,
+.advanced-settings-panel summary::after,
+.control-panel summary::after {
+  font-family: var(--font-header);
+  font-size: 1rem;
+  font-weight: 700;
+  /*
+    Buttons have a fixed appearance regardless of light/dark preference.
+    If buttons contain links, they are blue, else they are green.
+  */
+  color:var(--color-evergreen-dark);
+  background-color: var(--color-evergreen-medium-light);
+  border: var(--color-evergreen-medium-dark) 0.1rem solid;
+  border-radius: .25rem;
+  padding: 0 .25rem 0 .25rem;
+
+  cursor: pointer;
+  
+}
+
+button:hover,
+select:hover,
+.advanced-settings-panel summary:hover::after,
+.control-panel summary:hover::after {
+  transition: ease-in-out 100ms;
+  background-color: var(--color-evergreen-light);
+  border-color: var(--color-evergreen-medium-light);
+}
+
+button:active,
+select:active,
+.advanced-settings-panel summary:active::after,
+.control-panel summary:active::after {
+  background-color: var(--color-evergreen-medium-dark);
+  border-color: var(--color-evergreen-medium-dark);
+}
+
+button:has(a),
+input[type="file"]{
+  color: var(--color-sky-dark);
+  background-color: var(--color-sky-medium-light);
+  border-color: var(--color-sky-medium-dark);
+}
+
+/*
+  Buttons with links are blue.
+*/
+
+button a,button a:link,button a:visited,button a:hover,button a:active {
+  color: var(--color-sky-dark);
+  background-color: none;
+  border-color: none;
+}
+
+button:has(a:hover), input[type="file"]:hover{
+  transition: ease-in-out 100ms;
+  background-color: var(--color-sky-light);
+  border-color: var(--color-sky-medium-light);
+}
+
+button:has(a:active), input[type="file"]:hover{
+  background-color: var(--color-sky-medium-dark);
+  border-color: var(--color-sky-medium-dark);
 }
 
 /* Input Elements */
@@ -303,17 +401,13 @@ select, input[type="range"], input[type="color"] {
 body[data-theme="light"] select,
 body[data-theme="light"] input[type="range"],
 body[data-theme="light"] input[type="color"] {
-  background: #fff;
-  color: #333;
-  border: 1px solid #ddd;
+  border: 0.1rem solid var(--color-evergreen-medium-light);
 }
 
 body[data-theme="dark"] select,
 body[data-theme="dark"] input[type="range"],
 body[data-theme="dark"] input[type="color"] {
-  background: #1b1b1b;
-  color: #eee;
-  border: 1px solid #444;
+  border: 0.1rem solid var(--color-evergreen-medium-dark);
 }
 
 /* Channel-specific Slider Colors */
@@ -335,37 +429,37 @@ body[data-theme="dark"] input[type="color"] {
 
 /* Alpha Sliders */
 .alpha-slider {
-  max-width: 150px;
-  margin: 0 8px;
+  max-width: 10rem;
+  margin: 0 0.5rem;
 }
 
 .alpha-display {
   display: inline-block;
-  min-width: 40px;
+  min-width: 3rem;
   text-align: right;
   font-weight: bold;
 }
 
 body[data-theme="light"] .alpha-display {
-  color: #333;
+  color: var(--color-cloud-medium-dark);
 }
 
 body[data-theme="dark"] .alpha-display {
-  color: #eee;
+  color: var(--color-cloud-medium-light);
 }
 
 /* Color Input Group */
 .color-input-group {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 8px 0;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 input[type="color"] {
-  width: 48px;
-  height: 36px;
-  border-radius: 4px;
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -373,57 +467,27 @@ input[type="color"] {
 .channel-label {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 8px 0;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
   cursor: pointer;
 }
 
 .channel-swatch {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
   display: inline-block;
 }
 
-.channel-shape-select {
-  font-size: 0.8rem;
-  margin-left: 8px;
-  border-radius: 4px;
-  padding: 2px 4px;
-  transition: border-color 0.2s ease;
-}
-
-body[data-theme="light"] .channel-shape-select {
-  background: #fff;
-  color: #333;
-  border: 1px solid #ddd;
-}
-
-body[data-theme="dark"] .channel-shape-select {
-  background: #1b1b1b;
-  color: #eee;
-  border: 1px solid #444;
-}
-
 .shape-icon {
-  margin-left: 8px;
+  margin-left: 0.5rem;
   font-size: 1.2rem;
-  color: #8ab4ff;
 }
 
-/* Accessibility: Dark mode link colors */
-body[data-theme="light"] a {
-  color: #4f46e5;
+body[data-theme="light"] .shape-icon {
+  color: var(--color-sky-medium-dark);
 }
 
-body[data-theme="dark"] a {
-  color: #8ab4ff;
-}
-
-body[data-theme="light"] a:hover {
-  color: #4338ca;
-}
-
-body[data-theme="dark"] a:hover {
-  color: #a5c9ff;
+body[data-theme="dark"] .shape-icon {
+  color: var(--color-sky-medium-light);
 }
