@@ -274,7 +274,7 @@ aside{
       list-style-type: none;
     }
 
-    li.supernav::after{
+    li.supernav button:first-child::after{
       /* Inserts a small arrow between page header and element references. */
       content: '▾';
       display: block;
@@ -283,6 +283,8 @@ aside{
       color: var(--color-sky-accent);
       text-align: center;
       font-size: 1.5rem;
+
+      cursor: default;
     }
 
     li.supernav::before{
