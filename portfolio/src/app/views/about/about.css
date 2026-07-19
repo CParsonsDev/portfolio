@@ -80,7 +80,7 @@ p{
   background-color: var(--color-cloud-background);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .popup-content{
@@ -90,21 +90,44 @@ p{
   justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem;
+  overflow: hidden;
+  cursor: default;
+  
+  color:var(--color-cloud-accent);
+  background-color: var(--color-cloud-background);
+  border: var(--color-cloud-highlight) 0.1rem solid;
+  border-radius: 1rem;
 
   img{
-    border: 0.1rem solid var(--color-sky-medium-dark);
+    max-height: calc(200px - 0.75rem);
+    object-fit: contain;
+    background: var(--color-evergreen-background);
+    border: 0.1rem solid var(--color-evergreen-background);
     border-radius: 0.5rem 0.5rem 0 0;
+    
+    transition: 200ms ease-in-out;
   }
 }
 
 /* Hover trigger state changes visibility rules */
 .popup-container:hover .popup-content {
-  border: 0.2rem solid var(--color-sky-medium-dark);
-  border-radius: 1rem;
-  color: var(--color-sky-dark);
-  background-color: var(--color-sky-light);
   opacity: 1;
   visibility: visible;
+
+  overflow: hidden;
+  color:var(--color-evergreen-dark);
+  background-color: var(--color-evergreen-medium-light);
+  border: var(--color-evergreen-medium-dark) 0.1rem solid;
+
+  img{
+    border-color: var(--color-evergreen-medium-dark);
+    background: var(--color-evergreen-medium-dark);
+  }
+}
+
+.popup-container:hover {
+  color: var(--color-sky-dark);
+  background-color: var(--color-sky-light);
 }
 
 a{
