@@ -237,12 +237,14 @@ aside{
     }
 
     li.supernav::after{
-      /* Inserts a thin divider between page header and element references. */
-      content: '';
+      /* Inserts a small arrow between page header and element references. */
+      content: '▾';
       display: block;
       width: 100%;
-      height: .25rem;
-      background-color: var(--color-sky-accent);
+      height: 2rem;
+      color: var(--color-sky-accent);
+      text-align: center;
+      font-size: 1.5rem;
     }
 
     li.supernav::before{
@@ -250,6 +252,8 @@ aside{
       content: '';
       display: block;
       width: 100%;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
       height: .5rem;
       background-color: var(--color-sky-highlight);
     }
