@@ -205,6 +205,44 @@ button:has(a:active){
   border-color: var(--color-sky-medium-dark);
 }
 
+::selection{
+  background-color: var(--color-cloud-highlight);
+}
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {
+  
+}
+*/
+
+/*
+  index.html-specific styling
+  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+*/
+
 aside{
   display: inline-flex;
   flex-direction: column;
@@ -304,32 +342,4 @@ app-root {
   overflow: auto;
 
   background-image: var(--gradient-cloud);
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  body {
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  
 }
