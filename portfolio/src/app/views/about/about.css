@@ -80,7 +80,6 @@ p{
   background-color: var(--color-cloud-background);
   opacity: 0;
   visibility: hidden;
-  transition: 200ms ease-in-out;
 }
 
 .popup-content{
