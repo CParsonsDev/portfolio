@@ -35,7 +35,12 @@
             alt="Official HTML5 badge">
           <button>
             <a href="/world-map">
-              Open Interactive World Map in app
+              Open in app
+            </a>
+          </button>
+          <button>
+            <a>
+              Download a copy
             </a>
           </button>
         </div>
@@ -70,9 +75,15 @@
               <img [src]="tag" alt="{{ project.title }} {{project.tags}}" class="tag">
             }
             <button>
-              <a [class.active]="selectedSlug() === project.folder"
+              <a
+                [class.active]="selectedSlug() === project.folder"
                 (click)="select(project.folder)">
-                Open {{project.title}} in app
+                  Open in app
+              </a>
+            </button>
+            <button>
+              <a>
+                  Download a copy
               </a>
             </button>
           </div>

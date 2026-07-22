@@ -14,22 +14,6 @@ hgroup {
   gap: 0.5rem;
 }
 
-.tags{
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1rem;
-
-  button{
-    padding:0.5rem;
-  }
-}
-
-.tag {
-  max-width:30%;
-  height: 2.5rem;
-  display: inline-block;
-}
-
 /* To deactivate card hover effects when artifact hover
 .card:hover:has(.artifact-image:hover), */
 .card {
@@ -44,6 +28,24 @@ hgroup {
   border: 0.1rem solid var(--color-cloud-highlight);
   border-radius: 1.5rem;
   padding: 1rem;
+}
+
+.tags{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  justify-content: flex-end;
+
+  button{
+    padding:0.5rem;
+  }
+}
+
+.tag {
+  max-width:30%;
+  height: 2.5rem;
+  display: inline-block;
 }
 
 .artifacts {
@@ -64,7 +66,6 @@ hgroup {
   /* Conditional styling to mute inactive artifacts */
   filter:contrast(0.8) brightness(1.2);
   border: 0.1rem solid var(--color-evergreen-accent);
-
 }
 
 .artifact-image:hover {
